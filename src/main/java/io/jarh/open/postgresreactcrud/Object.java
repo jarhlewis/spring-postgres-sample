@@ -8,7 +8,7 @@ import javax.persistence.GenerationType;
 @Entity
 public class Object {
 
-    private int Id;
+    private Long Id;
     private String Name;
     private String Material;
     private String Location; 
@@ -20,7 +20,7 @@ public class Object {
     //Getters
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public int getId (){
+    public Long getId (){
         return Id;
     } 
     public String getName (){
@@ -34,7 +34,7 @@ public class Object {
     }
 
     //Setters
-    public void setId (int Id){
+    public void setId (Long Id){
         this.Id = Id;
     } 
     public void setName (String Name){
